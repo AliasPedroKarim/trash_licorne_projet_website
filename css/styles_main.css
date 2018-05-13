@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
-
 body {
   background-color: #C4C4C4;
-  font-family: "Lato", sans-serif;
 }
 
 .home {
@@ -10,7 +8,7 @@ body {
   height: 100vh;
   position: relative;
   background-image: url(http://www.agirabcd.fr/INTRAGIR-COM/BANQUE%20d%27Images/Foto-fond%20diaporama/fond-trame-agir.jpg);
-  background-size: cover;
+  background-size: auto;
 }
 
 
@@ -478,9 +476,6 @@ Animation keyframes
   color: black;
   margin: auto;
   z-index: 2;
-  padding: 30px;
-  border: 2px solid #a0a0a0;
-  border-radius: 5px 5px;
 
 }
 /*---------------------------Fin Dédier page contact-------------------------------------------*/
@@ -509,6 +504,7 @@ Animation keyframes
 .element_footer
 {
   width: 17%;
+  font-family: "Work Sans", sans-serif;
 }
 
 h3
@@ -522,7 +518,11 @@ h3>ul
   list-style-type: none;
 }
 
-
+li a:link
+{
+  color: #fff;
+  text-decoration: none;
+}
 
 /* ==================================== Dédier Logo + bouton connexion déconnexion==================================== */
 .logo {
@@ -551,10 +551,6 @@ h3>ul
   position: absolute;
   top: 21px;
 
-}
-
-.element_footer h3{
-  font-weight: bold;
 }
 
 /* ==================================== fin Dédier Logo + bouton connexion déconnexion==================================== */

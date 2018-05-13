@@ -1,0 +1,512 @@
+*/*Set's border, padding and margin to 0 for all values*/
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body, html {
+    color: #373C40;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+    height: 100%;
+
+    margin:10px;
+}
+body {
+    font-size: 70%;
+    background: url("http://www.agirabcd.fr/INTRAGIR-COM/BANQUE%20d%27Images/Foto-fond%20diaporama/fond-trame-agir.jpg");
+}
+p {
+    padding: 7px 0 7px 0;
+    font-weight: 500;
+    font-size: 10pt;
+}
+a {
+    color: #656565;
+    text-decoration:none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-weight:200;
+    color: #888888;
+    font-size:16pt;
+    background: transparent url(../img/h1.png) no-repeat center left;
+    padding-left:33px;
+    margin:7px 5px 8px 8px;
+    margin-left: 44%;
+}
+h4 {
+    padding:1px;
+    color: #ACACAC;
+    font-size:9pt;
+    font-weight:100;
+    text-transform:uppercase;
+}
+form.register{
+    width:800px;
+    margin: 20px auto 0px auto;
+    height:530px;
+    background-color:#fff;
+    padding:5px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+}
+form p{
+    font-size: 8pt;
+    clear:both;
+    margin: 0;
+    color:gray;
+    padding:4px;
+}
+form.register fieldset.row1
+{
+    width:770px;
+    padding:5px;
+    float:left;
+    border-top:1px solid #F5F5F5;
+    margin-bottom:15px;
+}
+form.register fieldset.row1 label{
+    width:140px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+}
+form.register fieldset.row2
+{
+    border-top:1px solid #F1F1F1;
+    border-right:1px solid #F1F1F1;
+    height:220px;
+    padding:5px;
+    float:left;
+}
+form.register fieldset.row3
+{
+    border-top:1px solid #F1F1F1;
+    padding:5px;
+    float:left;
+    margin-bottom:15px;
+    width:400px;
+}
+form.register fieldset.row4
+{
+    border-top:1px solid #F1F1F1;
+    border-right:1px solid #F1F1F1;
+    padding:5px;
+    float:left;
+    clear:both;
+    width:500px;
+}
+form.register .infobox{
+    float:right;
+    margin-top:20px;
+    border: 1px solid #F1F1F1;
+    padding:5px;
+    width:380px;
+    height:98px;
+    font-size:9px;
+    background: #FDFEFA url(../img/bg_infobox.gif) repeat-x top left;
+}
+form.register legend
+{
+    color: deeppink;
+    padding:2px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 14px;
+    font-weight:100;
+}
+form.register label{
+    color:#444;
+    width:98px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+}
+form.register label.optional{
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+    color: #A3A3A3;
+}
+form.register label.obinfo{
+    float:right;
+    padding:3px;
+    font-style:italic;
+}
+form.register input{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+}
+form.register input.long{
+    width: 247px;
+    color: #505050;
+}
+form.register input.short{
+    width: 40px;
+    color: #505050;
+}
+form.register input[type=radio]
+{
+    float:left;
+    width:15px;
+}
+form.register label.gender{
+    margin-top:-1px;
+    margin-bottom:2px;
+    width:34px;
+    float:left;
+    text-align:left;
+    line-height:19px;
+}
+form.register input[type=text]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+form.register input[type=password]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+.button
+{
+    background: #E7F00D url(../img/overlay.png) repeat-x;
+    padding: 8px 10px 8px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:left;
+    font-size:18px;
+    margin:10px;
+}
+.button1
+{
+    background: #FD6C9E url(../img/overlay.png) repeat-x;
+    padding: 8px 10px 8px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:left;
+    font-size:18px;
+    margin:10px;
+}
+form.register input[type=text].year
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+    width:30px;
+}
+form.register input[type=checkbox] {
+    width:14px;
+    margin-top:4px;
+}
+form.register select
+{
+    border: 1px solid #E1E1E1;
+    width: 130px;
+    float:left;
+    margin-bottom:3px;
+    color: #505050;
+    margin-right:5px;
+}
+form.register select.date
+{
+    width: 40px;
+}
+input:focus, select:focus{
+    background-color:p;
+}
+p.info{
+    font-size:7pt;
+    color: gray;
+}
+p.agreement{
+    margin-left:15px;
+}
+p.agreement label{
+    width:390px;
+    text-align:left;
+    margin-top:3px;
+}
+
+a.retour{
+    font-size: x-large;
+
+}
+
+input.color{
+    background-color: orange;
+    color: black;
+    width: 25%;
+    height: 3%;
+    font-size: x-large;
+    margin-left: 40%;
+    margin-right: 25%;
+
+    position: fixed;
+
+
+}
+
+input.color:hover{
+    background-color: hotpink;
+}
+input.color3{
+    background-color: orange;
+    color: black;
+    width: 25%;
+    height: 3%;
+    font-size: x-large;
+    margin-left: 40%;
+    margin-right: 25%;
+    margin-top: 3%;
+    position: fixed;
+
+
+}
+
+input.color3:hover{
+    background-color: hotpink;
+}
+input.color4{
+    background-color: hotpink;
+    color: black;
+    margin-top: 6%;
+    margin-left: 48%;
+    position: fixed;
+    height: 4%;
+    width: 8%;
+}
+input.color4:hover{
+    background-color: orange;
+}
+
+button.color2{
+    background-color: hotpink;
+    color: black;
+    margin-top: 9%;
+    margin-left: 48%;
+    position: fixed;
+    height: 4%;
+    width: 8%;
+    font-family: "Trebuchet MS";
+    font-style: oblique;
+}
+
+button.color2:hover{
+    background-color: orange;
+}
+input.color::placeholder{
+    color: black;
+    font-family: "Trebuchet MS";
+    font-style: oblique;
+
+}
+input.color3::placeholder{
+    color: black;
+    font-family: "Trebuchet MS";
+    font-style: oblique;
+
+}
+input.color4::placeholder{
+    color: black;
+    font-family: "Trebuchet MS";
+    font-style: oblique;
+
+}
+
+button.color5{
+    background-color: hotpink;
+    color: black;
+    margin-top: 12%;
+    margin-left: 48%;
+    position: fixed;
+    height: 4%;
+    width: 8%;
+    font-family: "Trebuchet MS";
+    font-style: oblique;
+}
+
+button.color5:hover{
+    background-color: orange;
+}
+
+
+
+input.int1{
+    background-color: orange;
+    color: black;
+    margin-top: 5%;
+    margin-left: 29%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+input.int1::placeholder{
+    color: black;
+
+}
+input.int1:hover{
+    background-color: hotpink;
+}
+input.int2{
+    background-color: orange;
+    color: black;
+    margin-top: 7%;
+    margin-left: 29%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+input.int2::placeholder{
+    color: black;
+
+}
+input.int2:hover{
+    background-color: hotpink;
+}
+
+input.int3{
+    background-color: orange;
+    color: black;
+    margin-top: 9%;
+    margin-left: 29%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+input.int3::placeholder{
+    color: black;
+
+}
+input.int3:hover{
+    background-color: hotpink;
+}
+input.int4{
+    background-color: orange;
+    color: black;
+    margin-top: 5%;
+    margin-left: 61%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+input.int4::placeholder{
+    color: black;
+
+}
+input.int4:hover{
+    background-color: hotpink;
+}
+input.int5{
+    background-color: orange;
+    color: black;
+    margin-top: 7%;
+    margin-left: 61%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+input.int5::placeholder{
+    color: black;
+
+}
+input.int5:hover{
+    background-color: hotpink;
+}
+
+input.int6{
+    background-color: orange;
+    color: black;
+    margin-top: 9%;
+    margin-left: 61%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+input.int6::placeholder{
+    color: black;
+
+}
+input.int6:hover{
+    background-color: hotpink;
+}
+
+select.date{
+    background-color: orange;
+    color: black;
+    margin-top: 5%;
+    margin-left: 45%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+select.date:hover{
+    background-color: hotpink;
+}
+input.int7{
+     background-color: hotpink;
+     color: black;
+     margin-top: 7%;
+     margin-left: 45%;
+     position: fixed;
+     height: 2%;
+     width: 15%;
+ }
+input.int7::placeholder{
+    color: black;
+
+}
+input.int7:hover{
+    background-color: orange;
+}
+
+button.int8{
+    background-color: hotpink;
+    color: black;
+    margin-top: 9%;
+    margin-left: 45%;
+    position: fixed;
+    height: 2%;
+    width: 15%;
+}
+button.int8::placeholder{
+    color: black;
+
+}
+button.int8:hover{
+    background-color: orange;
+}
+
+h1.titre-connexion{
+    margin-left: 48%;
+}
+.logo {
+
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    top: 200px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+}
