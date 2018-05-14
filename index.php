@@ -16,30 +16,9 @@ require '_header.php';
     </head>
 
     <body>
-<!--        <nav class="menu" style="z-index: 3;">-->
-<!--            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />-->
-<!--            <label class="menu-open-button menuplacement" for="menu-open">-->
-<!--                <span class="lines line-1"></span>-->
-<!--                <span class="lines line-2"></span>-->
-<!--                <span class="lines line-3"></span>-->
-<!--            </label>-->
-<!---->
-<!--            <a href="in-admin-panel/index.html" data-content="Profil"class="menu-item blue menuplacement"> <i class="fa fa-anchor"></i> </a>-->
-<!--            <a href="#" data-content="Panier" class="menu-item green"> <i class="fa fa-coffee"></i> </a>-->
-<!--            <a href="#" data-content="Recherche" class="menu-item red"> <i class="fa fa-heart"></i> </a>-->
-<!--            <a href="#" data-content="Catégorie"class="menu-item purple"> <i class="fa fa-microphone"></i> </a>-->
-<!--            <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>-->
-<!--            <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>-->
-<!---->
-<!--        </nav>-->
         <div class="logo">
             <img src="img/Trash-Licorne2.png"  alt="Logo">
         </div>
-
-<!--        <div style="display: flex; z-index: 2; background: transparent; width: auto; position: relative;">-->
-<!--            <div class="connexion_deconnexion" style="left: 10px;">Connexion</div>-->
-<!--            <div class="connexion_deconnexion" style="left: 150px;">Déconnexion</div>-->
-<!--        </div>-->
 
         <?php require 'includes/navigation_template.php' ?>
 
