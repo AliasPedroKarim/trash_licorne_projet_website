@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+require '_header.php';
+?><!DOCTYPE html>
 <html lang="fr" >
 
     <head>

@@ -27,41 +27,37 @@ require '_header.php';
 
   <?php require 'includes/navigation_template.php' ?>
 
- <div class="row">
-      <?php $produits = $DB->query('SELECT * FROM produits'); ?>
-            <?php foreach ($produits as $produit): ?>
-      <div class="col-sm-2">
-        <div class="cadre">
-          <center>
+    <div class="row">
+        <?php $produits = $DB->query('SELECT * FROM produits'); ?>
+        <?php foreach ($produits as $produit): ?>
+        <div class="col-sm-2">
+            <div class="cadre">
+                <center>
+                    <div class="product">
+                        <div class="imgbox">
+                        <a href="article.php"> <img src="img/produit-<?= $produit->id; ?>.png" class="blouson"></a>
 
-          <div class="product">
-          <div class="imgbox">
-          <a href="article.php"> <img src="img/produit-<?= $produit->id; ?>.png" class="blouson"></a>
+                            <div class="details">
+                                <h2>Licorne<br><span><?= $produit->nom; ?><h2><?= $produit->nom_principal; ?></span></h2>
+                                <div class="price"><?= $produit->prix; ?> €</div>
+                                <label> Sizes </label>
+                                <ul>
+                                <li>S</li>
+                                <li>L</li>
+                                </ul>
+                                <br>
+                                <a href="addpanier.php?id=<?= $produit->id; ?>"><button type="button" class="lea" class="add-to-cart" style="overflow: hidden;">Ajouter au panier</button></a>
 
-          <div class="details">
-            <h2>Licorne<br><span><?= $produit->nom; ?><h2><?= $produit->nom_principal; ?></span></h2>
-            <div class="price"><?= $produit->prix; ?> €</div>
-              <label> Sizes </label>
-              <ul>
-              <li>S</li>
-              <li>L</li>
-             </ul>
-             <br>
-           <a href="addpanier.php?id=<?= $produit->id; ?>"><button type="button" class="lea" class="add-to-cart" style="overflow: hidden;">Ajouter au panier</button></a>
-
-
-          </div>
-
-      
-
-          </div>
-          </div>
+                            </div>
+                        </div>
+                    </div>
                 </center>
 
-          </div>
-                 
-      </div>
-    <?php endforeach; ?>
+            </div>
+
+        </div>
+        <?php endforeach; ?>
+    </div>
 
 
 

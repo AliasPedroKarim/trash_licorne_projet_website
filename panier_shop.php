@@ -6,7 +6,7 @@ require '_header.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cart Page - Ustora Demo</title>
+    <title>Panier - Trash/Licorne</title>
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -98,6 +98,7 @@ require '_header.php';
                                             </td>
                                         </tr>
                                         <?php endforeach; ?>
+
                                         <tr>
                                             <td colspan="2">
                                                 <label>Total âchat : </label>
@@ -106,7 +107,7 @@ require '_header.php';
                                                 <label>Produit :</label><span> <?= $panier->count(); ?> </span>
                                             </td>
                                             <td colspan="2">
-                                                <span><?= number_format($produit->prix, 2, ',', ' '); ?> €</span>
+                                                <span><?= number_format($panier->total(), 2, ',', ' '); ?> €</span>
                                             </td>
                                         </tr>
                                         <tr>

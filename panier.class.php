@@ -12,6 +12,7 @@ class panier{
             $_SESSION['panier'] = array();
         }
         $this->DB = $DB;
+
         if(isset($_GET['delPanier'])){
             $this->del($_GET['delPanier']);
         }
