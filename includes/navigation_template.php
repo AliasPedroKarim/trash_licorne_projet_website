@@ -20,4 +20,8 @@
         <span class="bar-bottom"></span>
 
     </div>
+    <div class="icon_cart">
+        <a href="panier_shop"><img src="img/icon/online-shop.png" alt="panier magasin" class="icon_cart_img" /></a>
+        <div class="notif_contenu_cart" id="count"><?= $panier->count(); ?></div>
+    </div>
 </section>

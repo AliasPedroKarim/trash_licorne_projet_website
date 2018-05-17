@@ -2,8 +2,8 @@
 body {
     background-color: pink;
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 
 }
 .blouson
@@ -16,7 +16,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%; -50%);
+  transform: translate(-50%, -50%);
   width: 240px;
   height: 340px;
   background: #fff;
@@ -65,7 +65,7 @@ body {
 .details h2 span
 {
   font-size: 12px;
-  color: #ccc;
+  color: #1b1e21;
   font-weight: normal;
 
  
@@ -98,45 +98,31 @@ label
   font-size: 14px;
 
 }
-ul
-{
-  display: flex;
-  margin: 0;
-  padding: 0;
+
+.lea{
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: 15px 0 0;
+    background: #ff73bc;
+    text-align: center;
+    transition: 2s;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 5px;
 }
 
-ul li
-{
-  list-style: none;
-  font-weight: normal;
-  color: #ccc;
+.lea:hover {
+    background: #ff209a;
 }
 
-ul li:first-child
-{
-  margin-left: 0;
-}
-a
-{
-  display: block;
-  padding: 5px;
-  color: #fff;
-  margin: 15px 0 0;
-  /*background: #ff4faf;*/
-  text-align: center;
-  text-decoration: none;
-  transition: 3s;
-  cursor: pointer;
-
-}
-a:hover
-{
-
-  background: #ff209a;
+.articles{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
 }
 
-
-
-
-
-
+.cadre{
+    display: inline-block;
+    position: relative;
+}

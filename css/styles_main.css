@@ -1,14 +1,29 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
 body {
   background-color: #C4C4C4;
+  font-family: Lato, sans-serif;
+}
+.body_index{
+  background-image: url(http://www.agirabcd.fr/INTRAGIR-COM/BANQUE%20d%27Images/Foto-fond%20diaporama/fond-trame-agir.jpg);
+}
+
+.body_panier{
+  background: white;
+}
+
+a:link{
+  text-decoration: none;
 }
 
 .home {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  background-image: url(http://www.agirabcd.fr/INTRAGIR-COM/BANQUE%20d%27Images/Foto-fond%20diaporama/fond-trame-agir.jpg);
   background-size: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 
@@ -153,7 +168,6 @@ Burger king
 .open-overlay {
   position: absolute;
   right: 5rem;
-  top: 3.2rem;
   z-index: 100;
   width: 34px;
   display: block;
@@ -418,7 +432,6 @@ Animation keyframes
   font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
-  position: absolute;
   z-index: 10;
   top: 50px;
   left: 50px;
@@ -530,8 +543,6 @@ li a:link
   width: 100%;
   height: auto;
   z-index: 2;
-  position: absolute;
-  top: 150px;
   display: flex;
   justify-content: center;
 }
@@ -553,6 +564,175 @@ li a:link
 
 }
 
-/* ==================================== fin Dédier Logo + bouton connexion déconnexion==================================== */
+/* ==================================== Dédier icone panier et notif ==================================== */
 
-/*========================================Menu déroulant========================================================*/
+.icon_cart_img{
+  width: 40px;
+  height: auto;
+}
+
+.icon_cart{
+  position: relative;
+  top: 9px;
+  right: 150px;
+}
+
+.notif_contenu_cart{
+  background: red;
+  width: 12px;
+  height: auto;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 9px;
+}
+
+.ajoute_panier{
+    color: limegreen;
+    text-align: center;
+    display: none;
+}
+
+.icon_confirm{
+    width: 44px;
+    height: auto;
+}
+
+/*-------------------------------------Photo Accueil defilant------------------------------------------*/
+
+@-webkit-keyframes AutoSlide {
+  0%, 10%, 100% {
+    left: 0px; /* première image et dernière*/
+  }
+  12.5%, 22.5% {
+    left: -1200px; /*2ème image*/
+  }
+  25%, 35% {
+    left: -2400px; /*3ème image*/
+  }
+  37.5%, 47.5% {
+    left: -3600px; /*4ème image*/
+  }
+  50%, 60% {
+    left: -4800px; /*5ème image*/
+  }
+  62.5%, 72.5% {
+    left: -6000px; /*6ème image*/
+  }
+  75%, 85% {
+    left: -7200px; /*7ème image*/
+  }
+  87.5%, 93% {
+    left: -8400px; /*8ème image*/
+  }
+}
+@-moz-keyframes AutoSlide {
+  0%, 10%, 100% {
+    left: 0px; /* première image et dernière*/
+  }
+  12.5%, 22.5% {
+    left: -1200px; /*2ème image*/
+  }
+  25%, 35% {
+    left: -2400px; /*3ème image*/
+  }
+  37.5%, 47.5% {
+    left: -3600px; /*4ème image*/
+  }
+  50%, 60% {
+    left: -4800px; /*5ème image*/
+  }
+  62.5%, 72.5% {
+    left: -6000px; /*6ème image*/
+  }
+  75%, 85% {
+    left: -7200px; /*7ème image*/
+  }
+  87.5%, 93% {
+    left: -8400px; /*8ème image*/
+  }
+}
+@keyframes AutoSlide {
+  0%, 10%, 100% {
+    left: 0px; /* première image et dernière*/
+  }
+  12.5%, 22.5% {
+    left: -1200px; /*2ème image*/
+  }
+  25%, 35% {
+    left: -2400px; /*3ème image*/
+  }
+  37.5%, 47.5% {
+    left: -3600px; /*4ème image*/
+  }
+  50%, 60% {
+    left: -4800px; /*5ème image*/
+  }
+  62.5%, 72.5% {
+    left: -6000px; /*6ème image*/
+  }
+  75%, 85% {
+    left: -7200px; /*7ème image*/
+  }
+  87.5%, 93% {
+    left: -8400px; /*8ème image*/
+  }
+}
+
+#slideshow {
+  position: relative;    /*le parent positionné*/
+  width: 1200px;          /*limite en largeur (1 élément du slideshow)*/
+  height: 650px;         /*limite en hauteur*/
+  overflow: hidden;      /*on cache ce qui déborde*/
+  margin-top: 0px;
+}
+#sContent li {
+  display: inline;      /*on aligne les éléments du slideshow*/
+}
+#sContent {
+  display: flex;
+  position: absolute;   /*on sort l'élément du flux*/
+  top: 0;               /*on le positionne précisément dans ...*/
+  left: 0;              /*l'angle haut gauche de son parent positionné*/
+  width: 600px;
+  margin: 0;
+  padding: 0;
+
+  /*CSS3 webkit keyframes animation*/
+  -webkit-animation-name: AutoSlide;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+
+  /*CSS3 moz keyframes animation*/
+  -moz-animation-name: AutoSlide;
+  -moz-animation-duration: 35s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+
+  /*CSS3 W3C keyframes animation*/
+  animation-name: AutoSlide;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.sContent li img
+{
+  width: 1200px;
+  height: auto;
+}
+
+li img
+{
+  transition: .9s;
+}
+
+li img:hover
+{
+  transition: .9s;
+  transform: scale(1.15);
+}

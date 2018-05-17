@@ -15,23 +15,4 @@ body {
 	padding-top: 80px;
 	margin-left: 570px;
 }
-.lea
-{
-  display: black;
-  padding: 5px;
-  color: #fff;
-  margin: 15px 0 0;
-  background: #ff4faf;
-  text-align: center;
-  text-decoration: none;
-  transition: 3s;
-  cursor: pointer;
-
-}
-.lea:hover
-{
-  
-  background: #ff209a;
-}
-
 

@@ -16,6 +16,9 @@ class panier{
         if(isset($_GET['delPanier'])){
             $this->del($_GET['delPanier']);
         }
+        if(isset($_GET['delProduit'])){
+            $this->delProduit($_GET['delProduit']);
+        }
     }
 
     public function count(){
@@ -29,7 +32,8 @@ class panier{
         if(empty($ids)){
             $produits = array();
         }else{
-            $produits = $this->DB->query('SELECT id, prix FROM produits WHERE id IN ('.implode(',', $ids).')');
+            $produits = $this->DB->query('SELECT id, prix FROM produits_femme WHERE id IN ('.implode(',', $ids).')')
+            AND $this->DB->query('SELECT id, prix FROM produits_homme WHERE id IN ('.implode(',', $ids).')');
         }
 
         foreach ($produits as $produit){
@@ -49,6 +53,9 @@ class panier{
 
     public function del($produit_id){
         unset($_SESSION['panier'][$produit_id]);
+    }
+    public function delProduit($produit_id){
+        $_SESSION['panier'][$produit_id]--;
     }
 }
 ?>
